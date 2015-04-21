@@ -3,4 +3,38 @@
     xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
     <item android:id="@+id/action_settings" android:title="@string/action_settings"
         android:orderInCategory="100" app:showAsAction="never" />
+
+    <item
+        android:id="@+id/search_item"
+        app:showAsAction="always"
+        android:title="SEARCH"
+        android:icon="@android:drawable/ic_menu_search"/>
+
+    <item
+        android:id="@+id/add_item"
+        app:showAsAction="always"
+        android:title="ADD"
+        android:icon="@android:drawable/ic_menu_add"/>
+
+    <item
+        android:id="@+id/delete_item"
+        app:showAsAction="always"
+        android:title="DELETE"
+        android:icon="@android:drawable/ic_menu_delete" />
+
+    <item
+        android:id="@+id/share_item"
+        app:showAsAction="always"
+        android:title="SHARE"
+        android:icon="@android:drawable/ic_menu_share" >
+
+        <menu>
+            <item
+                android:id="@+id/googleplus_item"
+                android:title="Google+" />
+            <item
+                android:id="@+id/facebook_item"
+                android:title="Facebook" />
+        </menu>
+    </item>
 </menu>
