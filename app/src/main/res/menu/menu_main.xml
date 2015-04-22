@@ -7,25 +7,25 @@
     <item
         android:id="@+id/search_item"
         app:showAsAction="always"
-        android:title="SEARCH"
+        android:title="@string/icon_search"
         android:icon="@android:drawable/ic_menu_search"/>
 
     <item
         android:id="@+id/add_item"
         app:showAsAction="always"
-        android:title="ADD"
+        android:title="@string/icon_add"
         android:icon="@android:drawable/ic_menu_add"/>
 
     <item
         android:id="@+id/delete_item"
         app:showAsAction="always"
-        android:title="DELETE"
+        android:title="@string/icon_delete"
         android:icon="@android:drawable/ic_menu_delete" />
 
     <item
         android:id="@+id/share_item"
         app:showAsAction="always"
-        android:title="SHARE"
+        android:title="@string/icon_share"
         android:icon="@android:drawable/ic_menu_share" >
 
         <menu>

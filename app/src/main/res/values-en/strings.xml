@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Issac</string>
+
+    <string name="hello_world">Welcome</string>
+    <string name="action_settings">Setting</string>
+    <string name="icon_search">Search</string>
+    <string name="icon_add">Add</string>
+    <string name="icon_delete">Delete</string>
+    <string name="icon_share">Share</string>
+</resources>
