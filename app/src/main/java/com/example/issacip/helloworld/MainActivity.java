@@ -6,6 +6,11 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -14,6 +19,15 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        List<String> item  = new ArrayList<>();
+        for(int i =0; i < 20; i++) {
+            item.add("Row number : " + i);
+        }
+        int layoutId = android.R.layout.simple_list_item_1;
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, layoutId, item);
+        ListView item_list = (ListView) findViewById(R.id.item_list);
+        item_list.setAdapter(adapter);
     }
 
 
